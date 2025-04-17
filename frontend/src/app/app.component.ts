@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+// components
+import { UsersComponent } from './users/users.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [UsersComponent, RegisterComponent, LoginComponent, TasksComponent, HeaderComponent]
 })
-export class AppComponent {
-  title = 'frontend';
-}
+export class AppComponent {}
